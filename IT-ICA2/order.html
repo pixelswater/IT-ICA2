@@ -1,28 +1,25 @@
 <!--Author: ZHANG KAIXIN 261081G -->
 <!DOCTYPE html>
 <html lang="en">
-     <head>
-         <title>Order Form - NIDDIAS</title>
-         <style>
-             body { font-family: Arial, sans-serif; max-width: 560px; margin: 30px auto;}
-             label {display: inline-block; margin-top: 12px; font-weight: bold;}
-             input, select, textarea { margin-top:4px; }
-         </style>
+    <head>
+        <title>Order Form - NIDDIAS</title>
+        <style>
+            body { font-family: Arial, sans-serif; max-width: 560px; margin: 30px auto;}
+            label {display: inline-block; margin-top: 12px; font-weight: bold;}
+            input, select, textarea { margin-top:4px; }
+        </style>
     </head>
     <body>
         <form action="thankyou.html" method="get">
-        <h1>NIDDIAS Order Form</h1>
-        </form>
-        <h1>NIDDIAS- Secure Checkout</h1>
+        <h1>NIDDIAS- Secure Checkout </h1>
         <p>1.SHIPPING INFORMATION</p>
         <label for="custname">Your Name:</label><br>
         <input type="text" name="custname" id="custname" size="30">
         <br>
-        <label for="custname">Contact Number:</label>
+        <label for="contact">Contact Number:</label>
         <br>
-        <input type="text" name="custname"
-        id="custname" size="30"><br>
-        <label for="custname">Address/Postal Code:</label>
+        <input type="text" name="contact" id="contact" size="30"><br>
+        <label for="address">Address/Postal Code</label>
         <br>
         <input type="text" name="custname"
         id="custname" size="30"><br>
@@ -36,37 +33,30 @@
         </select>
         <input type="text" name="custname"
         id="custname" size="30"><br>
-        <p><strong>Select Delivery Method:</strong></p>
+        <p><strong>Select Delivery Method</strong></p>
         <label><input type="radio" name="delivery" value="standard" checked> Standard</label>
         <label><input type="radio" name="delivery" value="express"> Express +$10</label>
         <br>
         <br>
-        <label for="custname">Delivery Instructions:</label>
-        <br>
-        <textarea name="custname" id="custname" rows="4" cols="50"></textarea><br>
-        <br>
-        <label for="custnamme">Email:</label>
+        <label for="custname">Email:</label>
         <input type="email" name="email" id="email"
-        placeholder="you@example.com"
+        placeholder="you@exapmple.com"
         required><br>
         <p><strong>MEMBER:</strong></p>
-        <label><input type="checkbox" name="join Niddias PLUS And Save Your Delivery Details For Faster Checkout" value="yes"> Join Niddias PLUS and Save Your Delivery</label>
-        <p>2. PAYMENT INFORMATION</p>
+        <label><input type="checkbox" name="Join NIDDIAS PLUS and save your delivery details for faster checkout." value="yes"> Join NIDDIAS PLUS and save your delivery details for faster checkout.</label>
+        <p>2.PAYMENT INFORMATION</p>
         <label for="custname">Card Number:</label>
-        <br>
-        <input type="text" name="custname"
-        id="custname" size="30"><br>
-        <label for="custname">Cardholder Name:</label>
         <br>
         <input type="text" name="custname"
         id="custname" size="30"><br>
         <label for="custname">Expiry Date:</label>
         <input type="date" name="expiry" id="expiry"><br>
+        <br>
         <label for="custname">CVV:</label>
-        <input type="number" name="qty"
+        <input type="number" name="qtv"
         min="001" max="999" value="000"><br>
-       <input type="Submit" value="Submit Order">
-<input type="Reset" value="Clear Form">    
+        <input type="submit" value="Place Order">
+ <input type="Reset" value="Clear Form">
         </form>
     </body>
 </html>
