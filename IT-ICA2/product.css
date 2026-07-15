@@ -1,0 +1,8 @@
+table { border: collapse; margin: 0 auto; }
+th, td { border: 1px solid black; padding: 8px; }
+th { background-color: #f2f2f2; }
+body { font-family: Arial, sans-serif; max-width: 560px; margin: 60px auto; text-align: center; }
+nav ul {list-style-type: none; background-color:black;padding: 10px}
+nav li {display: inline-block }
+nav a{color: white;padding:8px 16px;text-decoration: none;}
+.site-logo {height: 50px;width:auto;}
