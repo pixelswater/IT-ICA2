@@ -1,6 +1,6 @@
 nav ul {list-style-type: none; background-color:black;padding: 10px}
 nav li {display: inline-block }
-nav a{color: white;padding:8px 16px;text-decoration: none;}
+nav a{color: white;padding:8px 16px;text-decoration: none;transition: 0.3s}
 .site-logo {height: 50px;width:auto;}
 nav a:hover {
     background: #f2a33c;
@@ -8,7 +8,7 @@ nav a:hover {
 .card:hover {
     box-shadow: 6px 6px
     14px #999;
-    transition: 0.3s;
+    transition: 0.3s; 
 }
 .checkout-form {
     width: 400px;
@@ -18,4 +18,9 @@ nav a:hover {
 .checkout-form div, .checkout-form p, .checkout-form input, .checkout-from select {
     margin: 12px 0;
 }
+<<<<<<< HEAD
+table { border: collapse; margin: 0 auto; }
+th, td { border: 1px solid black; padding: 8px; }
+=======
 body { font-family: Arial, sans-serif; max-width: 1600px; margin: 30px auto; text-align: center; }
+>>>>>>> 6f1ba37390ec82b642e1bf4dc9e057f9ce5f5436
