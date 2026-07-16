@@ -1,0 +1,42 @@
+/* Lesson 2 activity STARTER — polish & interactivity.
+   CORE = TODO 1–3 (do these first).  OPTIONAL = the gradient hero + hover glow. */
+
+body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; }
+
+/* ============================================================
+   TODO 1 — CARD: round the corners and lift it off the page.
+   Hints: .card -> background: white; padding: 16px; margin: 10px 0;
+                   border-radius: 12px;
+                   box-shadow: 4px 4px 10px #00000022;
+                   transition: 0.3s;
+   ============================================================ */
+
+
+/* ============================================================
+   TODO 2 — HOVER: make the nav links react to the mouse.
+   (Link styles are named in Requirement f.)
+   Hints: nav a       -> color: #1b2a4a; text-decoration: none;
+                         margin-right: 12px; transition: 0.3s;
+          nav a:hover  -> color: #f2a33c;
+   ============================================================ */
+
+
+/* ============================================================
+   TODO 3 — INTERACTIVITY (Requirement g): the FAQ uses <details>.
+   It already opens/closes on its own — just make the summary clickable.
+   Hints: summary -> cursor: pointer; font-weight: bold; padding: 6px 0;
+   ============================================================ */
+
+
+/* ============================================================
+   ⭐ OPTIONAL A — HERO gradient banner.
+   (Gradients are an optional flourish in this module — do it if you have time.)
+   Hints: .hero -> color: white; padding: 30px; border-radius: 12px;
+                   background: linear-gradient(to right, #1b2a4a, #4a648f);
+   ============================================================ */
+
+
+/* ============================================================
+   ⭐ OPTIONAL B — card GLOW on hover.
+   Hints: .card:hover -> box-shadow: 4px 4px 16px #00000033;
+   ============================================================ */
