@@ -1,21 +1,81 @@
-nav ul {list-style-type: none; background-color:black;padding: 10px}
-nav li {display: inline-block }
-nav {text-align: center;}
-nav a{color: white;padding:8px 16px;text-decoration: none;}
-.site-logo {height: 50px;width:auto;}
- .site-logo{text-align: center;}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+}
+nav ul {
+    list-style-type: none; 
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
 nav a:hover {
     background: #f2a33c;
 }
-.card:hover {
-    box-shadow: 6px 6px
-    14px #999;
+
+/* Logo Styles */
+.site-logo {
+    height: 50px;
+    width: auto;
+    display: block;
+    margin: 0 auto; /* Centers the image logo */
+}
+
+/* Card Styles */
+.card {
+    background: rgb(251, 250, 250); 
+    padding: 16px; 
+    margin: 10px 0;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px #00000022;
     transition: 0.3s;
 }
+.card:hover {
+    box-shadow: 6px 6px 14px #999;
+}
+
+/* Checkout Form Styles - Fixed typo from 'checkout-from' */
 .checkout-form {
     width: 400px;
     margin: 0 auto;
     text-align: center;
 }
-.checkout-form div, .checkout-form p, .checkout-form input, .checkout-from select {
-    margin: 12px 0;}
+.checkout-form div, 
+.checkout-form p, 
+.checkout-form input, 
+.checkout-form select {
+    margin: 12px 0;
+}
+
+/* Table Styles - Fixed 'border: collapse' to 'border-collapse: collapse' */
+table { 
+    border-collapse: collapse; 
+    margin: 0 auto; 
+}
+th, td { 
+    border: 1px solid black; 
+    padding: 8px; 
+}
+
+/* Body and Layout Styles - Fixed missing slash in background URL comment */
+body { 
+    font-family: Arial, sans-serif; 
+    max-width: 1600px; 
+    margin: 0 auto; 
+    padding: 0;
+    text-align: center; 
+    background-image: url('background.png'); 
+    background-size: cover;                           
+    background-position: center;                        
+    background-repeat: no-repeat;                       
+    background-attachment: fixed;                     
+}
