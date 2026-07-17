@@ -1,31 +1,8 @@
-<<<<<<< HEAD:IT-ICA2/NIDDIAS.css
-
-/* Navigation Styles */
-nav {
-    text-align: center;
-}
-nav ul {
-    list-style-type: none; 
-    background-color: black;
-    padding: 10px;
-    margin: 0;
-}
-nav li {
-    display: inline-block;
-}
-nav a {
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-=======
 nav ul {list-style-type: none; background-color:black;padding: 10px}
 nav li {display: inline-block }
 nav a{color: white;padding:8px 16px;text-decoration: none;transition: 0.3s}
 nav {text-align: center;}
 .site-logo {height: 50px;width:auto;}
->>>>>>> cfc5a39b57459acc8717fe7e157d90a1a1e49735:IT-ICA2/IT-ICA2/NIDDIAS.css
 nav a:hover {
     background: #f2a33c;
 }
