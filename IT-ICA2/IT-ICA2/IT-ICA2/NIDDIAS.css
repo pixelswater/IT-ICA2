@@ -16,15 +16,15 @@ nav a:hover {
     background: #f2a33c;
 }
 
-/* Logo Styles */
+
 .site-logo {
     height: 50px;
     width: auto;
     display: block;
-    margin: 0 auto; /* Centers the image logo */
+    margin: 0 auto; 
 }
 
-/* Card Styles */
+
 .card {
     display: inline-block;
     width: 250px;
@@ -32,8 +32,8 @@ nav a:hover {
     background: white;
     border-radius: 12px;
     box-shadow: 4px 4px 10px #00000022;
-    text-decoration: none;  /* Removes underline */
-    color: black;           /* Makes text black */
+    text-decoration: none;  
+    color: black;           
     transition: 0.3s;
     cursor: pointer;
 }
@@ -56,7 +56,7 @@ nav a:hover {
     margin: 12px 0;
 }
 
-/* Table Styles - Fixed 'border: collapse' to 'border-collapse: collapse' */
+
 table { 
     border-collapse: collapse; 
     margin: 0 auto; 
@@ -66,7 +66,7 @@ th, td {
     padding: 8px; 
 }
 
-/* Body and Layout Styles - Fixed missing slash in background URL comment */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -80,7 +80,7 @@ body {
 }
 .product-container {
     display:flex;
-    justify-content: center; /* Centers the cards */
+    justify-content: center; 
     gap: 30px;  
     margin-top: 20px;
 }
