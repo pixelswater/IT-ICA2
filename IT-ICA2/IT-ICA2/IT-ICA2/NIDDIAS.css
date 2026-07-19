@@ -1,0 +1,106 @@
+nav li {display: inline-block }
+nav a{color: white;padding:8px 16px;text-decoration: none;transition: 0.3s}
+nav {
+    width: 100%;
+    background: black;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+.site-logo {height: 50px;width:auto;}
+nav a:hover {
+    background: #f2a33c;
+}
+
+
+.site-logo {
+    height: 50px;
+    width: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+
+.card {
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px #00000022;
+    text-decoration: none;  
+    color: black;           
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 6px 6px 14px #999;
+}
+
+
+
+.checkout-form {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.checkout-form div, 
+.checkout-form p, 
+.checkout-form input, 
+.checkout-form select {
+    margin: 12px 0;
+}
+
+
+table { 
+    border-collapse: collapse; 
+    margin: 0 auto; 
+}
+th, td { 
+    border: 1px solid black; 
+    padding: 8px; 
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.product-container {
+    display:flex;
+    justify-content: center; 
+    gap: 30px;  
+    margin-top: 20px;
+}
+
+.guide-section {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+
+.guide-item {
+    margin-bottom: 40px;
+}
+
+
+.guide-item p {
+    line-height: 1.6;
+    max-width: 700px; 
+    margin: 10px auto 0 auto; 
+}
