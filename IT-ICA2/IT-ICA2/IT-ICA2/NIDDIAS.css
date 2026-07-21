@@ -1,3 +1,4 @@
+/* HEADER AND NAVIGATION */
 nav li {display: inline-block }
 nav a{color: white;padding:8px 16px;text-decoration: none;transition: 0.3s}
 nav {
@@ -11,7 +12,7 @@ nav ul {
     margin: 0;
     padding: 10px;
 }
-.site-logo {height: 50px;width:auto;}
+
 nav a:hover {
     background: #7a7777;
 }
@@ -24,7 +25,7 @@ nav a:hover {
     margin: 0 auto; 
 }
 
-
+/* HOMEPAGE */
 .card {
     display: inline-block;
     width: 250px;
@@ -43,7 +44,7 @@ nav a:hover {
 }
 
 
-
+/* CHECKOUT FORM */
 .checkout-form {
     width: 400px;
     margin: 0 auto;
@@ -66,7 +67,7 @@ th, td {
     padding: 8px; 
 }
 
-
+/* GENERAL STYLES */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -79,7 +80,7 @@ body {
     background-attachment: fixed;
 }
 
-
+/* PRODUCT PAGE */
 .product-container {                /*thanks to chatgpt for helping me with this css code*/
     display:flex;
     justify-content: center; 
@@ -116,7 +117,8 @@ body {
 }
 
 .about img {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     border-radius: 10px;
 }
 
@@ -128,7 +130,6 @@ body {
 .container {
     max-width: 1100px;
     margin: 0 auto;
-
     display: flex;
     align-items: center;
     gap: 60px;
@@ -136,4 +137,22 @@ body {
 
 #footer {
      color: #6b7280; font-size: 13px; margin-top: 24px;
+}
+
+.team-table {
+    border-collapse: collapse;
+    width: 250px;
+    background: white;
+}
+
+.team-table th,
+.team-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.team-table th {
+    background: #000;
+    color: white;
 }
