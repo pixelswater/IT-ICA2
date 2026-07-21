@@ -13,7 +13,7 @@ nav ul {
 }
 .site-logo {height: 50px;width:auto;}
 nav a:hover {
-    background: #f2a33c;
+    background: #7a7777;
 }
 
 
@@ -72,13 +72,15 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-image: url('background.png');
+    background-image: url('backgroundOLD.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.product-container {
+
+
+.product-container {                /*thanks to chatgpt for helping me with this css code*/
     display:flex;
     justify-content: center; 
     gap: 30px;  
