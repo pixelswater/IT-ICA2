@@ -3,7 +3,7 @@ nav li {display: inline-block }
 nav a{color: white;padding:8px 16px;text-decoration: none;transition: 0.3s}
 nav {
     width: 100%;
-    background: black;
+    background:white;
     text-align: center;
 }
 
@@ -53,7 +53,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid white;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -72,7 +72,7 @@ body {
 
 .nav-list a {
     text-decoration: none;
-    color: white;
+    color:black;
     font-weight: 500;
     font-size: 0.95rem;
     text-transform: uppercase;
@@ -83,7 +83,7 @@ body {
 
 .nav-list a:hover, 
 .nav-list a.active {
-    color: white;
+    color:black;
     border-bottom: 2px solid white;
 }
 
@@ -137,7 +137,7 @@ body {
 
 .slide-text p {
     font-size: 1.2rem;
-    color: #cccccc;
+    color:red;
     font-weight: 300;
 }
 
@@ -182,7 +182,7 @@ body {
 
 .product-img-wrapper {
     position: relative;
-    background-color: #fcfcfc;
+    background-color:gray;
     padding: 30px;
     display: flex;
     justify-content: center;
