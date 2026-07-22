@@ -26,22 +26,266 @@ nav a:hover {
 }
 
 /* HOMEPAGE */
-.card {
-    display: inline-block;
-    width: 250px;
-    padding: 20px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 4px 4px 10px #00000022;
-    text-decoration: none;  
-    color: black;           
-    transition: 0.3s;
-    cursor: pointer;
+/* GENERAL STYLES & RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.card:hover {
-    box-shadow: 6px 6px 14px #999;
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f5f5f5; /* Premium light grey Nike style background */
+    color: white;
+    line-height: 1.5;
+    text-align: left;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* PREMIUM NAVIGATION HEADER */
+.site-header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container .site-logo {
+    height: 35px;
+    object-fit: contain;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+    padding-bottom: 4px;
+}
+
+.nav-list a:hover, 
+.nav-list a.active {
+    color: white;
+    border-bottom: 2px solid #000000;
+}
+
+/* HERO SLIDER BANNER */
+.slider-banner {
+    width: 100%;
+    height: 480px;
+    background-color: transparent; 
+    background-image: url(images/Banner1.png) ;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: slideMove 14s infinite cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.slide {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 0 80px;
+}
+
+.slider-img {
+    height: 75%;
+    max-width: 45%;
+    object-fit: contain;
+    filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.5));
+}
+
+.slide-text {
+    max-width: 45%;
+    text-align: left;
+}
+
+.slide-text h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.slide-text p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    font-weight: 300;
+}
+
+@keyframes slideMove {
+    0%, 25% { transform: translateX(0); }
+    30%, 55% { transform: translateX(-25%); }
+    60%, 85% { transform: translateX(-50%); }
+    90%, 100% { transform: translateX(-75%); }
+}
+
+/* SECTION TITLES */
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    margin: 50px 0 25px 0;
+    padding-left: 10px;
+    border-left: 4px solid #111111;
+}
+
+/* MODERN PRODUCT GRID & CARDS */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.product-card {
+    background: #ffffff;
+    border-radius: 0px; /* Square cuts look more modern/athletic */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e5e5e5;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+.product-img-wrapper {
+    position: relative;
+    background-color: #fcfcfc;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+}
+
+.product-img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.05);
+}
+
+.sport-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #111111;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    letter-spacing: 0.5px;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.product-specialty {
+    font-size: 0.85rem;
+    color: #00b894; /* Functional pop color for technical details */
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.product-desc {
+    color: #666666;
+    font-size: 0.9rem;
+}
+
+/* EQUIPMENT BUYER'S GUIDE SECTION */
+.guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.guide-card {
+    background: #ffffff;
+    padding: 25px;
+    border: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.guide-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #111111;
+}
+
+.guide-card h4 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.guide-card p {
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+/* FOOTER STYLES */
+.site-footer {
+    background-color: #111111;
+    color: #777777;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 80px;
+    font-size: 0.85rem;
+}
+
+
+
 
 
 /* CHECKOUT FORM */
