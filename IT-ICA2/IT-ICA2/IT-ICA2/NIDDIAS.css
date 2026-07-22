@@ -379,10 +379,6 @@ body {
     gap: 60px;
 }
 
-#footer {
-     color: #6b7280; font-size: 13px; margin-top: 24px;
-}
-
 .team-table {
     border-collapse: collapse;
     width: 250px;
@@ -399,4 +395,8 @@ body {
 .team-table th {
     background: #000;
     color: white;
+}
+
+#footer {
+     color: #6b7280; font-size: 13px; margin-top: 24px;
 }
