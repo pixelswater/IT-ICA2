@@ -26,7 +26,6 @@ nav a:hover {
 }
 
 /* HOMEPAGE */
-/* GENERAL STYLES & RESET */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -35,7 +34,7 @@ nav a:hover {
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #f5f5f5; /* Premium light grey Nike style background */
+    background-color: #f5f5f5; 
     color: white;
     line-height: 1.5;
     text-align: left;
@@ -47,7 +46,7 @@ body {
     padding: 40px 20px;
 }
 
-/* PREMIUM NAVIGATION HEADER */
+/* NAVIGATION HEADER */
 .site-header {
     background-color: #ffffff;
     display: flex;
@@ -85,15 +84,15 @@ body {
 .nav-list a:hover, 
 .nav-list a.active {
     color: white;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid white;
 }
 
-/* HERO SLIDER BANNER */
+/*SLIDER BANNER */
 .slider-banner {
     width: 100%;
     height: 480px;
     background-color: transparent; 
-    background-image: url(images/Banner1.png) ;
+    background-image: url(images/) ;
     overflow: hidden;
     position: relative;
 }
@@ -133,7 +132,7 @@ body {
     letter-spacing: -1px;
     text-transform: uppercase;
     margin-bottom: 10px;
-    color: #ffffff;
+    color:black;
 }
 
 .slide-text p {
