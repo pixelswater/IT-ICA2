@@ -112,7 +112,7 @@
     border-left: 4px solid #111111;
 }
 
-/* MODERN PRODUCT GRID & CARDS */
+/* PRODUCT GRID & CARDS */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -122,7 +122,7 @@
 
 .product-card {
     background: #ffffff;
-    border-radius: 40px; /* Square cuts look more modern/athletic */
+    border-radius: 40px; 
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #e5e5e5;
