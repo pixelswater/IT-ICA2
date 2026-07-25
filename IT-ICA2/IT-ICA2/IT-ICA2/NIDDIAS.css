@@ -119,7 +119,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  background: radial-gradient(circle, #2a2a2a 0%, #111111 100%);
+  background: radial-gradient( transparent);
 }
 
 .isolated-hero-slider .slide-overlay {
@@ -128,7 +128,7 @@ body {
   left: 0;
   width: 100%;
   background: linear-gradient(transparent,black (0, 0, 0, 0.85));
-  color: #ffffff;
+  color: black;
   padding: 30px 20px;
   text-align: center;
   box-sizing: border-box;
