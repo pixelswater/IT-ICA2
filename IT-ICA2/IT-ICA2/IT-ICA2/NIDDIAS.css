@@ -22,7 +22,7 @@ nav a:hover {
     height: 50px;
     width: auto;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 /* HOMEPAGE */
@@ -68,6 +68,20 @@ th, td {
 }
 
 /* GENERAL STYLES */
+.Homepagebutton {
+     display: inline-block;
+    width: 250px;
+    padding: 20px;
+    background: black;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px #00000022;
+    text-decoration: none;  
+    color: grey;           
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
 .Banneracket {
     max-width: auto;
     max-height: 80%;
