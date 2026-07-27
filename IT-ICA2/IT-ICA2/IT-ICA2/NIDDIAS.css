@@ -34,7 +34,7 @@ nav a:hover {
     border-radius: 12px;
     box-shadow: 4px 4px 10px #00000022;
     text-decoration: none;  
-    color: black;           
+    color: grey;           
     transition: 0.3s;
     cursor: pointer;
 }
@@ -68,6 +68,15 @@ th, td {
 }
 
 /* GENERAL STYLES */
+.Banneracket {
+    max-width: auto;
+    max-height: 80%;
+}
+.Bannerglove {
+    max-width: auto;
+    max-height: 80%;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -79,7 +88,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 .isolated-hero-slider {
   position: relative;
   width: 100%;
@@ -128,7 +136,7 @@ body {
   left: 0;
   width: 100%;
   background: linear-gradient(transparent,black (0, 0, 0, 0.85));
-  color: black;
+  color:grey;
   padding: 30px 20px;
   text-align: center;
   box-sizing: border-box;
