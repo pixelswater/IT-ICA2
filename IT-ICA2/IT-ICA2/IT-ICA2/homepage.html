@@ -1,18 +1,17 @@
 <!-- Author: Shyam 261502D -->
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NIDDIAS HOMEPAGE</title>
     <link rel="stylesheet" href="NIDDIAS.css"> 
-    <link rel="icon" type="image" href="images/FaviconFINAL.png">  
+    <link class="favicon" rel="icon" type="image" href="images/FaviconFINAL.png">  
 </head>
 <body>
 
-
 <!-- Shyam 261502D -->
- <header class="site-header">
+<header class="site-header">
             <div class="logo-container">
                 <a href="homepage.html">
                     <img src="images/LogoFINAL.png" alt="Company Logo" class="site-logo">
@@ -28,6 +27,58 @@
                     <li><a href="aboutus.html">About Us</a></li>
                 </ul>
             </nav>
+</header>
+
+<div class="isolated-hero-slider">
+  <div class="slider-wrapper">
+    
+    <!-- Slide 1 -->
+    <div class="slide-item active">
+      <img src="images/ShoeFINAL.png" alt="Football Banner" class="Bannerimg">
+      <div class="slide-overlay">
+        <h2>Premium Football Gear</h2>
+        <p>Unmatched tactile feedback and glove-like comfort on the pitch.</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide-item">
+      <img src="images/RacketFINAL.png" alt="Badminton Banner" class="Banneracket">
+      <div class="slide-overlay">
+        <h2>Carbon Fibre Precision</h2>
+        <p>Ultra-lightweight frames designed for explosive speed and power.</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide-item">
+      <img src="images/BoxingglovesFINAL.png" alt="Boxing Banner" class="Bannerglove">
+      <div class="slide-overlay">
+        <h2>Pro Grip Compounds</h2>
+        <p>High-frequency training protection engineered for elite combat athletes.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function() {
+  const slides = document.querySelectorAll('.isolated-hero-slider .slide-item');
+  let currentSlide = 0;
+  const slideInterval = 4000;  //Rotates every 4 seconds
+
+  function nextSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
+
+  if (slides.length > 0) {
+    setInterval(nextSlide, slideInterval);
+  }
+})();
+</script>
 
 <!-- Shyam 261502D-->
 <h2 class="section-title">Top Selling Equipment</h2>
@@ -38,7 +89,7 @@
  <!--Shyam 261502D-->
     <div class="product">
         <a href="shoe.html">
-            <img src="images/ShoeFINAL.png" alt="Football Boots" class="product-img">
+            <img src="images/ShoeFINAL.png" alt="Football Boots" class="Homepagebutton">
         </a>
         <h3>Match Football Pro</h3>
         <p class="sport-tag">Football</p>
@@ -50,7 +101,7 @@
     <!-- Shyam 261502D-->
     <div class="product">
         <a href="racket.html">
-            <img src="images/RacketFINAL.png" alt="Badminton Racket" class="product-img">
+            <img src="images/RacketFINAL.png" alt="Badminton Racket" class="Homepagebutton">
         </a>
         <h3>Carbon Fibre Rackets</h3>
         <p class="sports">Badminton</p>
@@ -62,7 +113,7 @@
     <!-- Shyam 261502D -->
     <div class="product">
         <a href="boxinggloves.html">
- <img src="images/BoxingglovesFINAL.png" alt="Boxing Gloves" class="product-img">
+ <img src="images/BoxingglovesFINAL.png" alt="Boxing Gloves" class="Homepagebutton">
         </a>
         <h3>Grip Gloves Pro</h3>
         <p class="sport-tag">Boxing</p>
@@ -79,19 +130,12 @@
 
 <!-- Shyam 261502D-->
 <section class="guide-section">
-    <div class="guide-item">
-        <h4>Football Boots</h4>
-        <p>Experience Level: Recommended for all levels, from beginners needing comfort to elite professionals requiring precise, organic tactile feedback during high-stakes matches</p>
-    </div>
-    <div class="guide-item">
-        <h4>Badminton Racket</h4>
-        <p>
-        Experience Level: Best suited for intermediate to advanced athletes who possess the refined technique needed to control a stiffer, faster, and more responsive frame
-        </p>
-    </div>
-    <div class="guide-item">
-        <h4>Boxing Gloves</h4>
-        <p>Experience Level: Essential for competitive players, high-frequency trainers, and anyone playing under intense, sweat-heavy, or wet weather conditions</p>
+    <div class="Reviews">
+        <a href=>
+        <h1>Sports wear</h1>
+        <img src="images/shirt.png" alt="Shirt" width="200">
+    </a>
+
     </div>
 </section>
 
@@ -102,7 +146,5 @@
 
 </body>
 </html>
-<!-- Credits: ShirtFINAL, BoxingglovesFINAL, RacketFINAL, ShoeFINAL and LogoFINAL all done with Gemini: https://gemini.google.com/app->
+<!-- Credits: ShirtFINAL, BoxingglovesFINAL, RacketFINAL, ShoeFINAL and LogoFINAL all done with Gemini: https://google.com>
  <!-Credits: FaviconFINAL was done by Chatgpt: https://chatgpt.com-->
-
-
