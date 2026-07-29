@@ -265,6 +265,7 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        
     }
 }
 
@@ -274,6 +275,7 @@ body {
     display:flex;
     justify-content: center; 
     gap: 30px;  
+    animation: fadeIn 0.3s ease-in-out forwards;
 
 }
 
@@ -368,4 +370,111 @@ body {
 /* Hide default box when any valid item is targeted */
 .summary-box:target ~ .default-summary {
   display: none;
+}
+/* thanks to google gemini for helping me with this fade in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.FAQcard {
+    background: transparent;
+    width: 100%;
+    max-width: 300px;
+    
+}
+.checkout-form {
+    width: 450px;
+    margin: 30px auto;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.tab-radio {
+    display: none;
+}
+
+.nav-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.nav-btn {
+    flex: 1;
+    text-align: center;
+    padding: 10px 16px;
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-btn:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.view-content {
+    display: none;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+#tab-contact:checked ~ .content-contact {
+    display: block;
+}
+
+#tab-faq:checked ~ .content-faq {
+    display: block;
+}
+
+#tab-contact:checked ~ .nav-toggle .btn-contact,
+#tab-faq:checked ~ .nav-toggle .btn-faq {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.faq details {
+    text-align: left;
+    margin: 15px 0;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.faq summary {
+    font-weight: bold;
+}
+
+.faq p {
+    margin-top: 8px;
+    color: #333;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 25px auto;
+    width: 80%;
+}
+
+.purple-link {
+    color: #3b0086;
+    text-decoration: underline;
+}
+
+.black-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.black-link:hover {
+    text-decoration: underline;
 }
