@@ -266,7 +266,7 @@ body {
 
 
 /* PRODUCT PAGE */
-.product-container {                /*thanks to chatgpt for helping me with this css code*/
+.product-container {                /*thanks to chatgpt for coming up with the product container*/
     display:flex;
     justify-content: center; 
     gap: 30px;  
@@ -342,3 +342,26 @@ body {
      color: #6b7280; font-size: 13px; margin-top: 24px;
 }
 
+/* Hide all summary boxes by default */
+.summary-box {
+  display: none;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* Show default summary if no item selected */
+.default-summary {
+  display: block;
+}
+
+/* Show target summary when URL hash matches (e.g. order.html#racket or order.html#boxinggloves) */
+.summary-box:target {
+  display: block !important;
+}
+
+/* Hide default box when any valid item is targeted */
+.summary-box:target ~ .default-summary {
+  display: none;
+}

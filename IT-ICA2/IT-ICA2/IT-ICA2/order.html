@@ -60,11 +60,7 @@
         </select>
         <input type="text" name="custname"
         id="custname" size="30"><br>
-        <p><strong>Select Delivery Method</strong></p>
-        <label><input type="radio" name="delivery" value="standard" checked> Standard</label>
-        <label><input type="radio" name="delivery" value="express"> Express +$10</label>
-        <br>
-        <br>
+
         <label for="custname">Email:</label>
         <input type="email" name="email" id="email"
         placeholder="you@exapmple.com"
@@ -87,5 +83,61 @@
         <input type="submit" value="Place Order">
  <input type="Reset" value="Clear Form">
         </form>
+                <div class="order-summary-sidebar">
+
+  <!-- SHOE SUMMARY -->
+  <div id="shoe" class="summary-box">
+    <h3>Order Summary</h3>
+    <img src="images/ShoeFINAL.png" width="80" alt="Shoe">
+    <p><strong>NIDDIAS Shoe</strong></p>
+    <hr>
+    <p>Subtotal: $175</p>
+    <p>Shipping: free</p>
+    <p>GST: $15.75</p>
+    <p><strong>Total: $190.75</strong></p>
+  </div>
+
+  <!-- SHIRT SUMMARY -->
+  <div id="shirt" class="summary-box">
+    <h3>Order Summary</h3>
+    <img src="images/shirt.png" width="80" alt="Shirt">
+    <p><strong>NIDDIAS Shirt</strong></p>
+    <hr>
+    <p>Subtotal: $60</p>
+    <p>Shipping: Free</p>
+    <p>GST: $5.40</p>
+    <p><strong>Total: $65.40</strong></p>
+  </div>
+  <!-- BADMINTON RACKET SUMMARY -->
+  <div id="racket" class="summary-box">
+    <h3>Order Summary</h3>
+    <img src="images/RacketFINAL.png" width="80" alt="Badminton Racket">
+    <p><strong>NIDDIAS Badminton Racket</strong></p>
+    <hr>
+    <p>Subtotal: $120</p>
+    <p>Shipping: Free</p>
+    <p>GST: $10.8</p>
+    <p><strong>Total: $130.80</strong></p>
+  </div>
+
+  <!-- BOXING GLOVES SUMMARY -->
+  <div id="boxinggloves" class="summary-box">
+    <h3>Order Summary</h3>
+    <img src="images/BoxingglovesFINAL.png" width="80" alt="Boxing Gloves">
+    <p><strong>NIDDIAS Boxing Gloves</strong></p>
+    <hr>
+    <p>Subtotal: $110</p>
+    <p>Shipping: Free</p>
+    <p>GST: $9.9</p>
+    <p><strong>Total: $119.90</strong></p>
+  </div>
+
+  <!-- DEFAULT FALLBACK (Shows if order.html is opened directly) -->
+  <div class="summary-box default-summary">
+    <h3>Order Summary</h3>
+    <p>No product selected.</p>
+  </div>
+
+</div>
     </body>
 </html>
