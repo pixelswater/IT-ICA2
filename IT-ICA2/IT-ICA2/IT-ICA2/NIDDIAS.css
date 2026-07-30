@@ -205,6 +205,8 @@ body {
     height: 100%;
     object-fit: contain;
     background: radial-gradient(gray);
+    position:relative;
+    z-index: 4;
 }
 
 
@@ -236,9 +238,9 @@ body {
 }
 
 /* Slider Images Specifics */
-.Bannerimg { max-width: none; max-height: 80%; }
+.Bannerimg { max-width: none; max-height: 75%; }
 .Banneracket { max-width: none; max-height: 75%; }
-.Bannerglove { max-width: none; max-height: 80%; }
+.Bannerglove { max-width: none; max-height: 75%; }
 
 /* ==========================================================================
    7. RESPONSIVE DESIGN (Mobile Updates)-With the help of El chatgpt
