@@ -279,7 +279,7 @@ body {
 
 
 /* PRODUCT PAGE */
-.product-container {                /*thanks to chatgpt for coming up with the product container*/
+.productpage {                /*thanks to chatgpt for coming up with the product container*/
     display:flex;
     justify-content: center; 
     gap: 30px;  
@@ -485,4 +485,29 @@ body {
 
 .black-link:hover {
     text-decoration: underline;
+}
+
+.contactthanks {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.13);
+    animation: fadeIn 0.3s ease-in-out forwards;
+
+}
+
+.back2home {
+    display: inline-block;
+    margin-top: 20px;
+    color: #000000;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back2home:hover {
+    background-color: #b6b5b5;
+    color: #ffffff;
+    border-radius: 4px;
 }
