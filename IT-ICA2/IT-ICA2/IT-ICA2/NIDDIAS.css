@@ -1,28 +1,43 @@
 /* HEADER AND NAVIGATION */
-nav li {display: inline-block }
-nav a{color: black;padding:8px 16px;text-decoration: none;transition: 0.3s}
-nav {
-    width: 100%;
-    background:gray;
-    text-align: center;
+/* 1. Turn the main header into a Flexbox to push logo left and nav right */
+.site-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;   
+    background: gray;               
+    padding: 10px 40px;             
+}
+.site-logo {
+    height: 50px;
+    width: auto;
+    display: block;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 9px;
+    padding: 0px;    
+    display: flex;                  
+    gap: 100px;                      
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 15px;    
 }
 
 nav a:hover {
-    background:white;
-}
-
-
-.site-logo {
-    height: 50px;
-    width: auto;
-    display: block;
-    margin: 0 auto;
+    background: white;
+    padding: 30px;
 }
 
 .card {
