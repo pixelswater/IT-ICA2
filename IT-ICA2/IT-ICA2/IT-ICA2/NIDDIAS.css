@@ -1,11 +1,11 @@
 /* HEADER AND NAVIGATION */
-/* 1. Turn the main header into a Flexbox to push logo left and nav right */
 .site-header {
     display: flex;
     justify-content: space-between; 
     align-items: center;   
     background: gray;               
-    padding: 10px 40px;             
+    padding: 10px 40px;  
+    border-bottom:10px solid black;           
 }
 .site-logo {
     height: 50px;
@@ -37,7 +37,7 @@ nav a {
 
 nav a:hover {
     background: white;
-    padding: 30px;
+    padding: 26px;
 }
 
 .card {
@@ -154,18 +154,18 @@ body {
     box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* CARD IMAGES & HOVER EFFECTS*/
+/* CARD IMAGES and HOVER EFFECTS*/
 .Center {
     max-width: 100%;
     height: auto;
     transition: transform 0.3s ease;
+
 }
 .Main:hover .Center,
 .product:hover .Center,
 .reviewcard:hover .Center {
     transform: scale(1.1);
 }
-
 .Top-label {
    position: absolute;
    top: 10px;
@@ -178,7 +178,7 @@ body {
    z-index: 10;
 }
 
-/*HERO SLIDER COMPONENT (with the help of Chatgpt*/
+/*HERO SLIDER COMPONENT (with the help of Chatgpt)*/
 .isolated-hero-slider {
     position: relative;
     width: 100%;
@@ -187,8 +187,7 @@ body {
     margin: 0 0 20px 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
-    border-top: 4px solid black; 
+    background-color: transparent;
 }
 
 .isolated-hero-slider .slider-wrapper {
@@ -219,7 +218,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    background: radial-gradient(gray);
     position:relative;
     z-index: 4;
 }
@@ -230,8 +228,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(gray);
-    color: #fff; 
+    color:black; 
     padding: 30px 20px;
     text-align: center;
     box-sizing: border-box;
@@ -257,9 +254,7 @@ body {
 .Banneracket { max-width: none; max-height: 75%; }
 .Bannerglove { max-width: none; max-height: 75%; }
 
-/* ==========================================================================
-   7. RESPONSIVE DESIGN (Mobile Updates)-With the help of El chatgpt
-   ========================================================================== */
+/*RESPONSIVE DESIGN (Mobile Updates)-With the help of El chatgpt */
 @media (max-width: 768px) {
     .isolated-hero-slider { 
         height: 280px; 
