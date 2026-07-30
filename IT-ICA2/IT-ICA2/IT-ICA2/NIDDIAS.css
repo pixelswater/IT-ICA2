@@ -349,10 +349,10 @@ body {
 /* Hide all summary boxes by default */
 .summary-box {
   display: none;
-  background: #f9f9f9;
+  background:grey;
   border: 1px solid #ddd;
   padding: 15px;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 
 /* Show default summary if no item selected */
