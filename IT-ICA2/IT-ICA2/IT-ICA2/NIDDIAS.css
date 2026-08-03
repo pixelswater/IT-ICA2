@@ -177,16 +177,6 @@ body {
     cursor: pointer;
 }
 
-.isolated-hero-slider .slide-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(transparent, black);
-  color: black;
-  padding: 30px 20px;
-  text-align: center;
-  box-sizing: border-box; }
 .reviewcard:hover {
     transform: translateY(-5px);
     box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.5);
@@ -346,16 +336,13 @@ body {
 
 .about img {
     width: 100%;
-    max-width: 450px;
+    max-width: 360px;
     border-radius: 10px;
 }
 
 .text {
     flex: 1;
     max-width: 500px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 25px;
-    border-radius: 10px;
 }
 
 .container {
@@ -388,6 +375,7 @@ body {
      color: #6b7280; font-size: 13px; margin-top: 24px;
 }
 
+<<<<<<< HEAD
 .hero {
     width: 100%;
     background: black;
@@ -545,6 +533,8 @@ details[open] p {
 }
 
 /* NEW SECTION */
+=======
+>>>>>>> c2c3693896c21e56d64a11817af48506231e6894
 /* Hide all summary boxes by default */
 .summary-box {
   display: none;
