@@ -536,7 +536,51 @@ details[open] p {
     text-decoration: underline;
 }
 
-/* NEW SECTION */
+@media (max-width: 768px) {
+
+    /* Navigation */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Hero section */
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero-line {
+        font-size: 4rem;
+    }
+
+    .word-box,
+    .word-list div {
+        height: 70px;
+    }
+
+    /* About section */
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img {
+        max-width: 100%;
+    }
+
+    /* Team section */
+    .team {
+        flex-direction: column;
+    }
+
+    /* Tables */
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+/* END OF NICHOLAS CSS */
+
 /* Hide all summary boxes by default */
 .summary-box {
   display: none;
