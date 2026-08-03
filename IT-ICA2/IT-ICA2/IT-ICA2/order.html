@@ -2,82 +2,207 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet"href=NIDDIAS.css>
-        <link rel="icon" type="image" href="images/FaviconFINAL.png">
-    </head>
-    <head>
-        <title>Order Form - NIDDIAS</title>  
-        </style>
-
+        <meta charset="UTF-8">
+        <title>Order Form - NIDDIAS</title>   
+        <link rel="stylesheet" href="NIDDIAS.css">
+        <link rel="icon" type="image/png" href="images/FaviconFINAL.png">
     </head>
     <body>
-         <header class="site-header">
+        <header class="site-header">
             <div class="logo-container">
                 <a href="homepage.html">
                     <img src="images/LogoFINAL.png" alt="Company Logo" class="site-logo">
                 </a>
             </div>
-                        <!-- same nav -->
-    <nav class="main-navigation">
-        <ul class="nav-list">
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="product.html">Products</a></li>
-            <li><a href="order.html">Order</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-        </ul>
-    </nav>
-</header>
-        </header>
-        <form action="thankyou.html" method="get">
-            <div class="checkout-form">
+            <!-- same nav -->
+            <nav class="main-navigation">
+                <ul class="nav-list">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="product.html">Products</a>
+                        <ul class="dropdownmenu">
+                            <li><a href="racket.html">Rackets</a></li>
+                            <li><a href="shoe.html">Shoes</a></li>
+                            <li><a href="shirt.html">Sports Wear</a></li>
+                            <li><a href="boxinggloves.html">Boxing Gloves</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
         </header>
         <h1>NIDDIAS - Checkout </h1>
-        <p>1.SHIPPING INFORMATION</p>
-        <label for="custname">Your Name:</label><br>
-        <input type="text" name="custname" id="custname" size="30">
-        <br>
-        <label for="contact">Contact Number:</label>
-        <br>
-        <input type="text" name="contact" id="contact" size="30"><br>
-        <label for="address">Address/Postal Code</label>
-        <br>
-        <input type="text" name="custname"
-        id="custname" size="30"><br>
-        <p><label for="Country And City">Country And City:</label></p>
-        <select name="Country And City" id="Country And City">
-            <option value="Singapore">Singapore</option>
-            <option value="Malaysia">Malaysia</option>
-            <option value="Indonesia">Indonesia</option>
-            <option value="Thailand">Thailand</option>
-            <option value="Vietnam">Vietnam</option>
-        </select>
-        <input type="text" name="custname"
-        id="custname" size="30"><br>
-        <p><strong>Select Delivery Method</strong></p>
-        <label><input type="radio" name="delivery" value="standard" checked> Standard</label>
-        <label><input type="radio" name="delivery" value="express"> Express +$10</label>
-        <br>
-        <br>
-        <label for="custname">Email:</label>
-        <input type="email" name="email" id="email"
-        placeholder="you@exapmple.com"
-        required><br>
-        <p><strong>MEMBER:</strong></p>
-        <label><input type="checkbox" name="Join NIDDIAS PLUS and save your delivery details for faster checkout." value="yes"> Join NIDDIAS PLUS and save your delivery details for faster checkout.</label>
-        <p>2.PAYMENT INFORMATION</p>
-        <label for="custname">Card Number:</label>
-        <br>
-        <input type="text" name="custname"
-        id="custname" size="30"><br>
-        <label for="custname">Expiry Date:</label>
-        <input type="date" name="expiry" id="expiry"><br>
-        <br>
-        <label for="custname">CVV:</label>
-        <input type="number" name="qtv"
-        min="001" max="999" value="000"><br>
-        <input type="submit" value="Place Order">
- <input type="Reset" value="Clear Form">
-        </form>
+        <div class="checkoutlayout">
+            <div class="ordersummary">
+                <div id="shoe" class="summary-box">
+                    <h3>Order Summary</h3>
+                    <img src="." width="80" alt="Shoe">
+                    <p><strong>NIDDIAS FlexStride 10</strong></p>
+                    <hr>
+                    <p>Subtotal: $49</p>
+                    <p>Shipping: free</p>
+                    <p>GST: $4.40</p>
+                    <p><strong>Total: $53.40</strong></p>
+                </div>
+                <div id="shoe2" class="summary-box">
+                    <h3>Order Summary</h3>
+                    <img src="images/ShoeFINAL.png" width="80" alt="Shoe">
+                    <p><strong>Match Football Pro</strong></p>
+                    <hr>
+                    <p>Subtotal: $175</p>
+                    <p>Shipping: free</p>
+                    <p>GST: $15.75</p>
+                    <p><strong>Total: $190.75</strong></p>
+                </div>
+                <div id="shoe3" class="summary-box">
+                    <h3>Order Summary</h3>
+                    <img src="." width="80" alt="Shoe">
+                    <p><strong>NIDDIAS CourtGrip Pro</strong></p>
+                    <hr>
+                    <p>Subtotal: $100</p>
+                    <p>Shipping: free</p>
+                    <p>GST: $9.00</p>
+                    <p><strong>Total: $109.00</strong></p>
+                </div>
+
+
+                <div id="shirt" class="summary-box">
+                    <h3>Order Summary</h3>
+                    <img src="images/shirt.png" width="80" alt="Shirt">
+                    <p><strong>NIDDIAS Performance Shirt</strong></p>
+                    <hr>
+                    <p>Subtotal: $60</p>
+                    <p>Shipping: Free</p>
+                    <p>GST: $5.40</p>
+                    <p><strong>Total: $65.40</strong></p>
+                </div>
+                <div id="shirt2" class="summary-box">
+                    <h3>Order Summary</h3>
+                    <img src="." width="80" alt="Shirt">
+                    <p><strong>NIDDIAS CoreFit Shorts</strong></p>
+                    <hr>
+                    <p>Subtotal: $35</p>
+                    <p>Shipping: Free</p>
+                    <p>GST: $3.15</p>
+                    <p><strong>Total: $38.15</strong></p>
+                </div>
+                <div id="shirt3" class="summary-box">
+                    <h3>Order Summary</h3>
+                    <img src="." width="80" alt="Shirt">
+                    <p><strong>NIDDIAS All-Day Track Pants</strong></p>
+                    <hr>
+                    <p>Subtotal: $45</p>
+                    <p>Shipping: Free</p>
+                    <p>GST: $4.05</p>
+                    <p><strong>Total: $49.05</strong></p>
+                </div>
+
+
+                <div id="racket" class="summary-box">
+                    <h3>Order Summary</h3>
+                    <img src="images/RacketFINAL.png" width="80" alt="Badminton Racket">
+                    <p><strong>Carbon Fibre Racket</strong></p>
+                    <hr>
+                    <p>Subtotal: $120</p>
+                    <p>Shipping: Free</p>
+                    <p>GST: $10.8</p>
+                    <p><strong>Total: $130.80</strong></p>
+                </div>
+                <div id="racket2" class="summary-box">
+                    <h3>Order Summary</h3>
+                    <img src="images/RacketFINAL.png" width="80" alt="Badminton Racket">
+                    <p><strong>NIDDIAS Apex Strike</strong></p>
+                    <hr>
+                    <p>Subtotal: $145</p>
+                    <p>Shipping: Free</p>
+                    <p>GST: $14.35</p>
+                    <p><strong>Total: $159.35</strong></p>
+                </div>
+                <div id="racket3" class="summary-box">
+                    <h3>Order Summary</h3>
+                    <img src="images/RacketFINAL.png" width="80" alt="Badminton Racket">
+                    <p><strong>NIDDIAS SmashLite 10</strong></p>
+                    <hr>
+                    <p>Subtotal: $60</p>
+                    <p>Shipping: Free</p>
+                    <p>GST: $5.40</p>
+                    <p><strong>Total: $65.40</strong></p>
+                </div>
+
+
+                <div id="boxinggloves" class="summary-box">
+                    <h3>Order Summary</h3>
+                    <img src="images/BoxingglovesFINAL.png" width="80" alt="Boxing Gloves">
+                    <p><strong>NIDDIAS Boxing Gloves</strong></p>
+                    <hr>
+                    <p>Subtotal: $110</p>
+                    <p>Shipping: Free</p>
+                    <p>GST: $9.9</p>
+                    <p><strong>Total: $119.90</strong></p>
+                </div>
+                <div id="boxinggloves2" class="summary-box">
+                    <h3>Order Summary</h3>
+                    <img src="." width="80" alt="Boxing Gloves">
+                    <p><strong>NIDDIAS StrikePro Training Gloves</strong></p>
+                    <hr>
+                    <p>Subtotal: $120</p>
+                    <p>Shipping: Free</p>
+                    <p>GST: $10.8</p>
+                    <p><strong>Total: $130.80</strong></p>
+                </div>
+                <div id="boxinggloves3" class="summary-box">
+                    <h3>Order Summary</h3>
+                    <img src="." width="80" alt="Boxing Gloves">
+                    <p><strong>NIDDIAS FirstFit Boxing Gloves</strong></p>
+                    <hr>
+                    <p>Subtotal: $59</p>
+                    <p>Shipping: Free</p>
+                    <p>GST: $5.31</p>
+                    <p><strong>Total: $64.31</strong></p>
+                </div>
+                <div class="summary-box default-summary">
+                    <h3>Order Summary</h3>
+                    <p>No product selected.</p>
+            </div>
+            <div class="checkoutform">
+                <form action="thankyou.html" method="get">
+                    <p>1.SHIPPING INFORMATION</p>
+                    <label for="custname">Your Name:</label><br>
+                    <input type="text" name="custname" id="custname" size="30">
+                    <br><br>                    
+                    <label for="contact">Contact Number:</label><br>
+                    <input type="text" name="contact number" id="contact" placeholder="12345678" required>
+                    <br><br>
+                    <label for="address">Address/Postal Code</label><br>
+                    <input type="text" name="address" id="address" placeholder="canberra street 128c 753128" required>
+                    <br><br>
+                    <p><label for="CountryAndCity">Country And City:</label></p>
+                    <select name="Country And City" id="CountryAndCity">
+                        <option value="Singapore">Singapore</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Vietnam">Vietnam</option>
+                    </select>
+                    <input type="text" name="custcity" id="custcity" size="30"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="you@exapmple.com" required><br>
+                    <p><strong>MEMBER:</strong></p>
+                    <label><input type="checkbox" name="Join NIDDIAS PLUS and save your delivery details for faster checkout." value="yes"> Join NIDDIAS PLUS and save your delivery details for faster checkout.</label>
+                    <p>2.PAYMENT INFORMATION</p>
+                    <label for="cardnumber">Card Number:</label>
+                    <input type="text" name="card number" id="cardnumber" placeholder="number" required><br><br>
+                    <label for="expiry">Expiry Date:</label>
+                    <input type="date" name="expiry" id="expiry"><br><br>
+                    <label for="cvv">CVV:</label>
+                    <input type="number" name="qtv" id="cvv" min="001" max="999" value="000"><br><br>
+                    <input type="submit" value="Place Order">
+                    <input type="reset" value="Clear Form">
+                </form>
+            </div>
+
+        </div>
     </body>
 </html>
