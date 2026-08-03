@@ -36,11 +36,12 @@
     </nav>
 </header>
 
-<div class="isolated-hero-slider">
+<div class="hero-slider">
   <div class="slider-wrapper">
+    <div class="slider-content">
     
     <!-- Slide 1 -->
-    <div class="slide-item active">
+    <div class="slide-item">
       <img src="images/ShoeFINAL.png" alt="Football Banner" class="Bannerimg">
       <div class="slide-overlay">
         <h2>Premium Football Gear</h2>
@@ -65,27 +66,11 @@
         <p>High-frequency training protection engineered for elite combat athletes.</p>
       </div>
     </div>
-
+</div>
   </div>
 </div>
 
-<script>
-(function() {
-  const slides = document.querySelectorAll('.isolated-hero-slider .slide-item');
-  let currentSlide = 0;
-  const slideInterval = 4000;
 
-  function nextSlide() {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add('active');
-  }
-
-  if (slides.length > 0) {
-    setInterval(nextSlide, slideInterval);
-  }
-})();
-</script>
 
 <!-- Shyam 261502D-->
 <main>
