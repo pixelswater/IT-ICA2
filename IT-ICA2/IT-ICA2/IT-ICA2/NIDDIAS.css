@@ -42,23 +42,7 @@ nav a:hover {
     padding: 26px 40px;
 }
 
-.card {
-    display: inline-block;
-    width: 250px;
-    padding: 20px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 4px 4px 10px #00000022;
-    text-decoration: none;  
-    color: black;           
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.card:hover {
-    transform: translateY(-8px); 
-    box-shadow: 4px 12px 20px black; 
-}
+ 
 
 
 
@@ -303,6 +287,35 @@ body {
     justify-content: center; 
     gap: 30px;  
     animation: fadeIn 0.3s ease-in-out forwards;
+
+}
+
+@media (max-width: 768px) {
+    
+    .productpage {                /*thanks to chatgpt for coming up with the product container*/
+    display:flex;
+    justify-content: center; 
+    gap: 30px;  
+    animation: fadeIn 0.3s ease-in-out forwards;
+    }
+
+    .card {
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px #00000022;
+    text-decoration: none;  
+    color: black;           
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 4px 12px 20px black; 
+}
 
 }
 
