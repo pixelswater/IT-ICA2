@@ -176,10 +176,6 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
-<<<<<<< HEAD
-.reviewcard:hover {
-    
-=======
 
 .isolated-hero-slider .slide-overlay {
   position: absolute;
@@ -194,7 +190,6 @@ body {
 .reviewcard:hover {
     transform: translateY(-5px);
     box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.5);
->>>>>>> 9481b3aa87262e1b81234708a8049cbbd55a5cb1
 }
 
 /* CARD IMAGES and HOVER EFFECTS*/
@@ -393,10 +388,6 @@ body {
      color: #6b7280; font-size: 13px; margin-top: 24px;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 9481b3aa87262e1b81234708a8049cbbd55a5cb1
 .hero {
     width: 100%;
     background: black;
@@ -476,11 +467,7 @@ details[open] p {
     animation: fade 0.3s ease;
 }
 
-<<<<<<< HEAD
-@media
-=======
 /* NEW SECTION */
->>>>>>> 9481b3aa87262e1b81234708a8049cbbd55a5cb1
 /* Hide all summary boxes by default */
 .summary-box {
   display: none;
