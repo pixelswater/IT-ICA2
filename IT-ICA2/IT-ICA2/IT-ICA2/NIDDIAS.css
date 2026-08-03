@@ -336,13 +336,16 @@ body {
 
 .about img {
     width: 100%;
-    max-width: 360px;
+    max-width: 450px;
     border-radius: 10px;
 }
 
 .text {
     flex: 1;
     max-width: 500px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
 }
 
 .container {
@@ -375,7 +378,6 @@ body {
      color: #6b7280; font-size: 13px; margin-top: 24px;
 }
 
-<<<<<<< HEAD
 .hero {
     width: 100%;
     background: black;
@@ -533,8 +535,6 @@ details[open] p {
 }
 
 /* NEW SECTION */
-=======
->>>>>>> c2c3693896c21e56d64a11817af48506231e6894
 /* Hide all summary boxes by default */
 .summary-box {
   display: none;
