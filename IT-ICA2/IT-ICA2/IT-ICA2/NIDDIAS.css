@@ -34,12 +34,12 @@ nav a {
     transition: 0.3s;
     font-family: sans-serif;
     font-weight: bold;
-    border-radius: 15px;    
+    border-radius: 18px;    
 }
 
 nav a:hover {
     background: white;
-    padding: 8px 16px;
+    padding: 26px 40px;
 }
 
 .card {
@@ -104,7 +104,7 @@ th, td {
     }
 
     nav a:hover {
-        padding: 6px 12px;
+        padding: 15px 30px;
     }
 }
 
@@ -129,7 +129,7 @@ body {
     gap: 30px; 
 }
 
-/*PRODUCT CARDS (.Main)*/
+/*PRODUCT CARDS*/
 .Main { 
     width: 250px;
     height: 500px;
