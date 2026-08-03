@@ -177,9 +177,22 @@ body {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+.isolated-hero-slider .slide-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(transparent, black);
+  color: black;
+  padding: 30px 20px;
+  text-align: center;
+  box-sizing: border-box;
+=======
 .reviewcard:hover {
     transform: translateY(-5px);
     box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.5);
+>>>>>>> 92c7dca29c9c2237323518cf66260fef77244306
 }
 
 /* CARD IMAGES and HOVER EFFECTS*/
@@ -336,13 +349,16 @@ body {
 
 .about img {
     width: 100%;
-    max-width: 360px;
+    max-width: 450px;
     border-radius: 10px;
 }
 
 .text {
     flex: 1;
     max-width: 500px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
 }
 
 .container {
@@ -375,6 +391,88 @@ body {
      color: #6b7280; font-size: 13px; margin-top: 24px;
 }
 
+<<<<<<< HEAD
+.hero {
+    width: 100%;
+    background: black;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.hero-line {
+    color: white;
+    font-size: 9rem;      /* About 144px */
+    font-weight: 900;
+    line-height: 0.9;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.word-box {
+    height: 150px;
+    overflow: hidden;
+}
+
+.word-list {
+    display: flex;
+    flex-direction: column;
+    animation: slideWords 1s forwards;
+}
+
+.word-list div {
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+    font-size: clamp(4rem, 10vw, 9rem);
+    font-weight: 900;
+    line-height: 0.9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes slideWords {
+    0%,20%   { transform: translateY(0); }
+    25%,45%  { transform: translateY(-150px); }
+    50%,70%  { transform: translateY(-300px); }
+    75%,100% { transform: translateY(-450px); }
+}   
+
+.testtest {
+    color: white;
+}
+
+/* ABOUT US DETAILS */
+
+details {
+    margin-top: 25px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+summary:hover {
+    color: #555;
+}
+
+details p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+details[open] p {
+    animation: fade 0.3s ease;
+}
+
+@media
+=======
 /* Hide all summary boxes by default */
 .summary-box {
   display: none;
@@ -591,3 +689,4 @@ body {
     animation: fadeIn 0.3s ease-in-out forwards;
 
 }
+>>>>>>> 92c7dca29c9c2237323518cf66260fef77244306
