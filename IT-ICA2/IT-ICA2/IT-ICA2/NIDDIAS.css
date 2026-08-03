@@ -206,92 +206,85 @@ body {
 }
 
 /*HERO SLIDER COMPONENT (with the help of Chatgpt)*/
-.isolated-hero-slider {
-    position: relative;
+.hero-slider {
     width: 100%;
-    height: 400px; 
-    overflow: hidden;
-    margin: 0 0 20px 0;
-    padding: 0;
-    box-sizing: border-box;
+    height: 400px;
+    overflow: hidden; 
+    position: relative;
     background-color: transparent;
+    border-top: 4px solid black;
 }
 
-.isolated-hero-slider .slider-wrapper {
+.slider-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-content {
+    display: flex;
+    width: 300%; 
+    height: 100%;
+    animation: sideSlideAnimation 10s infinite;
+}
+
+.slide-item {
+    width: 33.33%;
+    height: 100%;
     position: relative;
-    width: 100%;
-    height: 100%;
 }
 
-.isolated-hero-slider .slide-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
-    z-index: 1;
+@keyframes sideSlideAnimation {
+    0%, 25%   { transform: translateX(0); }        
+    33%, 58%  { transform: translateX(-33.33%); }  
+    66%, 91%  { transform: translateX(-66.66%); }  
+    100%      { transform: translateX(0); }        
 }
 
-.isolated-hero-slider .slide-item.active {
-    opacity: 1;
-    visibility: visible;
-    z-index: 2;
-}
-
-.isolated-hero-slider .slide-item img {
-    width: 100%;
-    height: 100%;
+.slide-item img {
+    width: 75%;
+    height: 75%;
     object-fit: contain;
-    position:relative;
-    z-index: 4;
+    
 }
 
-
-.isolated-hero-slider .slide-overlay {
+.slide-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    color:black; 
+    background: transparent;
+    color: black;
     padding: 30px 20px;
     text-align: center;
     box-sizing: border-box;
-        z-index: 3;}
+}
 
-.isolated-hero-slider .slide-overlay h2 {
+.slide-overlay h2 {
     font-size: 2.2rem;
     margin: 0 0 10px 0;
     text-transform: uppercase;
     font-family: sans-serif;
-    letter-spacing: 1px;
 }
 
-.isolated-hero-slider .slide-overlay p {
+.slide-overlay p {
     font-size: 1.1rem;
     margin: 0;
     font-family: sans-serif;
-    opacity: 0.9;
 }
-
-/* Slider Images Specifics */
-.Bannerimg { max-width: none; max-height: 75%; }
-.Banneracket { max-width: none; max-height: 75%; }
-.Bannerglove { max-width: none; max-height: 75%; }
-
-/*RESPONSIVE DESIGN (Mobile Updates)-With the help of El chatgpt */
+.Bannerimg, .Banneracket, .Bannerglove { 
+    max-width: 100%; 
+    height: auto; 
+}
 @media (max-width: 768px) {
-    .isolated-hero-slider { 
+    .hero-slider { 
         height: 280px; 
     }
 
-    .isolated-hero-slider .slide-overlay h2 { 
+    .hero-slider .slide-overlay h2 { 
         font-size: 1.5rem; 
     }
 
-    .isolated-hero-slider .slide-overlay p { 
+    .hero-slider .slide-overlay p { 
         font-size: 0.9rem; 
     }
 
@@ -299,10 +292,8 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        
     }
 }
-
 
 
 /* PRODUCT PAGE */
