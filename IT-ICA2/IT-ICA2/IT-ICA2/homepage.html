@@ -19,20 +19,29 @@
     </div>
     <nav class="main-navigation">
         <ul class="nav-list">
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="product.html">Products</a></li>
-            <li><a href="order.html">Order</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
+<li><a href="homepage.html">Home</a></li>
+<li class="dropdown">
+    <a href="product.html">Products</a>
+    <ul class="dropdownmenu">
+        <li><a href="racket.html">Rackets</a></li>
+        <li><a href="shoe.html">Shoes</a></li>
+        <li><a href="shirt.html">Sports Wear</a></li>
+        <li><a href="boxinggloves.html">Boxing Gloves</a></li>
+    </ul>
+</li>
+<li><a href="order.html">Order</a></li>
+<li><a href="contactus.html">Contact Us</a></li>
+<li><a href="aboutus.html">About Us</a></li>
         </ul>
     </nav>
 </header>
 
-<div class="isolated-hero-slider">
+<div class="hero-slider">
   <div class="slider-wrapper">
+    <div class="slider-content">
     
     <!-- Slide 1 -->
-    <div class="slide-item active">
+    <div class="slide-item">
       <img src="images/ShoeFINAL.png" alt="Football Banner" class="Bannerimg">
       <div class="slide-overlay">
         <h2>Premium Football Gear</h2>
@@ -57,27 +66,11 @@
         <p>High-frequency training protection engineered for elite combat athletes.</p>
       </div>
     </div>
-
+</div>
   </div>
 </div>
 
-<script>
-(function() {
-  const slides = document.querySelectorAll('.isolated-hero-slider .slide-item');
-  let currentSlide = 0;
-  const slideInterval = 4000;
 
-  function nextSlide() {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add('active');
-  }
-
-  if (slides.length > 0) {
-    setInterval(nextSlide, slideInterval);
-  }
-})();
-</script>
 
 <!-- Shyam 261502D-->
 <main>
@@ -89,7 +82,7 @@
             <div class="Top-label">Best Selling</div>
             <a href="shoe.html">
                 <img src="images/ShoeFINAL.png" alt="Football Boots" width="200" class="Center">
-            <h3>Match Football Pro</h3>
+            <h3>NIDDIAS Mercurials</h3>
             <h4>Specialty: Leather cover</h4>
             <p>Premium, ultra-soft leather providing a glove-like fit exceptional durability used in sports like football.</p>
         </div>
@@ -100,7 +93,7 @@
             <div class="Top-label">Best Selling</div>
             <a href="racket.html">
                 <img src="images/RacketFINAL.png" alt="Badminton Racket" width="190" class="Center">
-            <h3>Carbon Fibre Rackets</h3>
+            <h3>NIDDIAS Carbon Max</h3>
             <h4>Specialty: Carbon Fibre</h4>
             <p>Carbon fiber is an ultra-lightweight, durable material heavily used to make high-performance badminton rackets.</p>
         </div>
@@ -112,7 +105,7 @@
             <a href="boxinggloves.html">
                 <img src="images/BoxingglovesFINAL.png" alt="Boxing Gloves" width="330" class="Center">
             
-            <h3>Grip Gloves Pro</h3>
+            <h3>NIDDIAS StrikePRO Gloves</h3>
             <h4>Specialty: Grip Compound</h4>
             <p>Rubber texture designed for enhanced grip, ensuring effortless contact and control directly on the body.</p>
         </div>
