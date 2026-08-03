@@ -558,19 +558,13 @@ body {
 .checkout-layout .checkoutform {
     margin: 0;
 }
-.dropdown {
-    position: relative; /* Anchor for the dropdown menu position */
-}
 
 .dropdownmenu {
     display: none;                
-    position: absolute;
-    top: 100%;                    
-    left: 0;
-    background-color: gray;      
+    position: absolute;             
+    background-color: rgb(250, 249, 249);      
     border-radius: 10px;
     padding: 10px 0;
-    min-width: 150px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 100;
     flex-direction: column;      
