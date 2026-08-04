@@ -3,9 +3,9 @@
     display: flex;
     justify-content: space-between; 
     align-items: center;   
-    background: gray;               
+    background: rgb(255, 255, 255);               
     padding: 10px 40px;  
-    border-bottom:10px solid black;
+    border-bottom:10px solid rgb(61, 61, 61);
     height: auto;          
 }
 .site-logo {
@@ -134,7 +134,7 @@ body {
 .Main { 
     width: 250px;
     height: 500px;
-    background: gray;
+    background: rgb(255, 255, 255);
     border-radius: 12px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.13);
     position: relative;
@@ -168,7 +168,7 @@ body {
     display: inline-block;
     width: 250px;
     padding: 20px;
-    background: gray;
+    background: rgb(255, 255, 255);
     border-radius: 12px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.13);
     text-decoration: none;  
@@ -584,7 +584,7 @@ details[open] p {
 /* Hide all summary boxes by default */
 .summary-box {
   display: none;
-  background:grey;
+  background:rgb(253, 253, 253);
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 20px;
