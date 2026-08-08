@@ -1,0 +1,693 @@
+/* HEADER AND NAVIGATION */
+.site-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;   
+    background: rgb(255, 255, 255);               
+    padding: 10px 40px;  
+    border-bottom:10px solid rgb(61, 61, 61);
+    height: auto;          
+}
+.site-logo {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0px;    
+    display: flex;                  
+    gap:auto; 
+    height: auto;                     
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 18px;    
+}
+
+nav a:hover {
+    background: white;
+    padding: 26px 40px;
+}
+
+.card {
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px #00000022;
+    text-decoration: none;  
+    color: black;           
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 4px 12px 20px black; 
+}
+
+
+
+/* CHECKOUT FORM */
+.checkout-form {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.checkout-form div, 
+.checkout-form p, 
+.checkout-form input, 
+.checkout-form select {
+    margin: 12px 0;
+}
+
+
+table { 
+    border-collapse: collapse; 
+    margin: 0 auto; 
+}
+th, td { 
+    border: 1px solid black; 
+    padding: 8px; 
+}
+/* RESPONSIVE NAVBAR */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    nav a {
+        padding: 6px 12px;     
+        font-size: 14px;
+    }
+
+    nav a:hover {
+        padding: 15px 30px;
+    }
+}
+
+/*HOMEPAGE*/
+/*GLOBAL STYLES*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('IT-ICA2/backgroundOLD.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*LAYOUT CONTAINERS*/
+.productmover {   
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+}
+
+/*PRODUCT CARDS*/
+.Main { 
+    width: 250px;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.13);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.Main:hover {
+    transform: translateY(-8px); 
+    box-shadow: 4px 12px 20px black; 
+}
+
+.Main > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px; 
+    text-decoration: none;  
+    color:black;   
+    box-sizing: border-box;
+}
+
+/*CUSTOMER REVIEW CARDS */
+.reviewcard {
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.13);
+    text-decoration: none;  
+    color: black;           
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.reviewcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* CARD IMAGES and HOVER EFFECTS*/
+.Center {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+
+}
+.Main:hover .Center,
+.product:hover .Center,
+.reviewcard:hover .Center {
+    transform: scale(1.1);
+}
+.Top-label {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   background: black;
+   color: white;
+   padding: 5px 10px;
+   font-size: 12px;
+   border-radius: 15px;
+   z-index: 10;
+}
+
+/*HERO SLIDER COMPONENT (with the help of Gemini)*/
+.hero-slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden; 
+    position: relative;
+    background-color: transparent;
+    border-top: 4px solid black;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.slider-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-content {
+    display: flex;
+    width: 300%; 
+    height: 100%;
+    animation: sideSlideAnimation 10s infinite;
+}
+
+.slide-item {
+    width: 33.33%;
+    height: 100%;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes sideSlideAnimation {
+    0%, 25%   { transform: translateX(0); }        
+    33%, 58%  { transform: translateX(-33.33%); }  
+    66%, 91%  { transform: translateX(-66.66%); }  
+    100%      { transform: translateX(0); }        
+}
+
+.slide-item img {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+    
+}
+
+.slide-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    color: black;
+    padding: 30px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.slide-overlay h2 {
+    font-size: 2.2rem;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.slide-overlay p {
+    font-size: 1.1rem;
+    margin: 0;
+    font-family: sans-serif;
+}
+.Bannerimg, .Banneracket, .Bannerglove { 
+    max-width: 100%; 
+    height: auto; 
+}
+@media (max-width: 768px) {
+    .hero-slider { 
+        height: 280px; 
+    }
+
+    .hero-slider .slide-overlay h2 { 
+        font-size: 1.5rem; 
+    }
+
+    .hero-slider .slide-overlay p { 
+        font-size: 0.9rem; 
+    }
+
+    .productmover {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+
+/* PRODUCT PAGE */
+.productpage {                /*thanks to chatgpt for coming up with the product container*/
+    display:flex;
+    justify-content: center; 
+    gap: 30px;  
+    animation: fadeIn 0.3s ease-in-out forwards;
+
+}
+
+.guide-section {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+
+.guide-item {
+    margin-bottom: 40px;
+}
+
+
+.guide-item p {
+    line-height: 1.6;
+    max-width: 700px; 
+    margin: 10px auto 0 auto; 
+}
+
+/* NICHOLAS ABOUTUS CSS */
+
+.about img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+.about{
+    padding: 20px 40px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.about p{
+    line-height: 1.7;
+    background: white;
+    border-color: black;
+}
+
+    #footer {
+     color: #6b7280; font-size: 13px; margin-top: 24px;
+     margin-top: 80px;
+}
+
+
+/* ABOUT US DETAILS */
+
+details {
+    margin-top: 25px;
+}
+
+summary{
+    cursor: pointer;
+    background:black;
+    color:white;
+}
+
+summary:hover{
+    background:#333;
+}
+
+details p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+details[open] p {
+    animation: fade 0.3s ease;
+}
+
+/* TEAM INFO SECTION */
+
+.team-section{
+    margin-top:80px;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.flip-card {
+    width: 220px;
+    height: 240px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-front {
+    background: white;
+}
+
+.flip-card-back {
+    background: black;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back a {
+    color: white;
+    text-decoration: none;
+}
+
+.flip-card-back a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    /* Stack navigation links vertically on mobile */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Stack team cards vertically on small screens */
+    .team-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Make images responsive so they never overflow mobile viewports */
+    .about img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Optional: Center-align text in .about sections for a cleaner mobile look */
+    .about {
+        text-align: center;
+    }
+}
+/* END OF NICHOLAS CSS */
+
+/* Hide all summary boxes by default */
+.summary-box {
+  display: none;
+  background:rgb(253, 253, 253);
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+/* Show default summary if no item selected */
+.default-summary {
+  display: block;
+}
+
+/* Show target summary when URL hash matches (e.g. order.html#racket or order.html#boxinggloves) */
+.summary-box:target {
+  display: block !important;
+}
+
+/* Hide default box when any valid item is targeted */
+.summary-box:target ~ .default-summary {
+  display: none;
+}
+/* thanks to google gemini for helping me with this fade in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.FAQcard {
+    background: transparent;
+    width: 100%;
+    max-width: 300px;
+    
+}
+.checkout-form {
+    width: 450px;
+    margin: 30px auto;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.tab-radio {
+    display: none;
+}
+
+.nav-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.nav-btn {
+    flex: 1;
+    text-align: center;
+    padding: 10px 16px;
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-btn:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.view-content {
+    display: none;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+#tab-contact:checked ~ .content-contact {
+    display: block;
+}
+
+#tab-faq:checked ~ .content-faq {
+    display: block;
+}
+
+#tab-contact:checked ~ .nav-toggle .btn-contact,
+#tab-faq:checked ~ .nav-toggle .btn-faq {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.faq details {
+    text-align: left;
+    margin: 15px 0;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.faq summary {
+    font-weight: bold;
+}
+
+.faq p {
+    margin-top: 8px;
+    color: #333;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 25px auto;
+    width: 80%;
+}
+
+.purple-link {
+    color: #3b0086;
+    text-decoration: underline;
+}
+
+.black-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.black-link:hover {
+    text-decoration: underline;
+}
+
+.contactthanks {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.13);
+    animation: fadeIn 0.3s ease-in-out forwards;
+
+}
+
+.back2home {
+    display: inline-block;
+    margin-top: 20px;
+    color: #000000;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back2home:hover {
+    background-color: #b6b5b5;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.checkoutlayout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 900px;
+    margin: 20px auto 50px auto;
+    animation: fadeIn 0.3s ease-in-out forwards;
+    
+}
+
+.ordersummary {
+    width: 400px;
+    flex-shrink: 0;
+}
+
+/* make it fit*/
+.checkout-layout .checkoutform {
+    margin: 0;
+}
+
+.dropdownmenu {
+    display: none;                
+    position: absolute;             
+    background-color: rgb(250, 249, 249);      
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    flex-direction: column;      
+}
+
+
+.dropdown:hover .dropdownmenu {
+    display: flex;
+}
+
+
+.dropdownmenu li {
+    display: block;
+    margin: 5px 0;
+}
+
+.dropdownmenu a {
+    display: block;
+    padding: 8px 16px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.dropdownmenu a:hover {
+    background-color: white;
+    color: black;
+}
+
+.productlisting {
+    display:flex;
+    justify-content: center; 
+    gap: 30px;  
+    animation: fadeIn 0.3s ease-in-out forwards;
+
+}
