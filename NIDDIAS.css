@@ -329,12 +329,6 @@ body {
 }
 
 /* NICHOLAS ABOUTUS CSS */
-.about {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    padding: 80px 40px;
-}
 
 .about img {
     width: 100%;
@@ -342,95 +336,23 @@ body {
     border-radius: 10px;
 }
 
-.text {
-    flex: 1;
-    max-width: 500px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 25px;
-    border-radius: 10px;
+.about{
+    padding: 20px 40px;
+    max-width: 700px;
+    margin: auto;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-
-.team-table {
-    border-collapse: collapse;
-    width: 250px;
+.about p{
+    line-height: 1.7;
     background: white;
+    border-color: black;
 }
 
-.team-table th,
-.team-table td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
-}
-
-.team-table th {
-    background: #000;
-    color: white;
-}
-
-#footer {
+    #footer {
      color: #6b7280; font-size: 13px; margin-top: 24px;
+     margin-top: 80px;
 }
 
-.hero {
-    width: 100%;
-    background: black;
-    padding: 80px 40px;
-    box-sizing: border-box;
-    text-align: left;
-}
-
-.hero-line {
-    color: white;
-    font-size: 9rem;      /* About 144px */
-    font-weight: 900;
-    line-height: 0.9;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.word-box {
-    height: 150px;
-    overflow: hidden;
-}
-
-.word-list {
-    display: flex;
-    flex-direction: column;
-    animation: slideWords 1s forwards;
-}
-
-.word-list div {
-    height: 150px;
-
-    display: flex;
-    align-items: center;
-
-    color: white;
-    font-size: clamp(4rem, 10vw, 9rem);
-    font-weight: 900;
-    line-height: 0.9;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-@keyframes slideWords {
-    0%,20%   { transform: translateY(0); }
-    25%,45%  { transform: translateY(-150px); }
-    50%,70%  { transform: translateY(-300px); }
-    75%,100% { transform: translateY(-450px); }
-}   
-
-.testtest {
-    color: white;
-}
 
 /* ABOUT US DETAILS */
 
@@ -438,16 +360,13 @@ details {
     margin-top: 25px;
 }
 
-summary {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    transition: color 0.3s;
+summary{
+    background:black;
+    color:white;
 }
 
-summary:hover {
-    color: #555;
+summary:hover{
+    background:#333;
 }
 
 details p {
@@ -460,20 +379,9 @@ details[open] p {
 }
 
 /* TEAM INFO SECTION */
-.team-section {
-    padding: 80px 40px;
-    text-align: center;
-}
 
-.team-section h2 {
-    margin-bottom: 15px;
-    font-size: 2rem;
-}
-
-.team-section > p {
-    max-width: 700px;
-    margin: 0 auto 40px;
-    line-height: 1.6;
+.team-section{
+    margin-top:80px;
 }
 
 .team-cards {
@@ -495,7 +403,7 @@ details[open] p {
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.8s;
+    transition: transform 0.6s;
     transform-style: preserve-3d;
 }
 
@@ -538,45 +446,28 @@ details[open] p {
 
 @media (max-width: 768px) {
 
-    /* Navigation */
+    /* Stack navigation links vertically on mobile */
     nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Stack team cards vertically on small screens */
+    .team-cards {
         flex-direction: column;
         align-items: center;
     }
 
-    /* Hero section */
-    .hero {
-        padding: 40px 20px;
-    }
-
-    .hero-line {
-        font-size: 4rem;
-    }
-
-    .word-box,
-    .word-list div {
-        height: 70px;
-    }
-
-    /* About section */
-    .about {
-        flex-direction: column;
-        text-align: center;
-    }
-
+    /* Make images responsive so they never overflow mobile viewports */
     .about img {
+        width: 100%;
         max-width: 100%;
     }
 
-    /* Team section */
-    .team {
-        flex-direction: column;
-    }
-
-    /* Tables */
-    table {
-        width: 100%;
-        font-size: 14px;
+    /* Optional: Center-align text in .about sections for a cleaner mobile look */
+    .about {
+        text-align: center;
     }
 }
 /* END OF NICHOLAS CSS */
