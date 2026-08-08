@@ -361,6 +361,7 @@ details {
 }
 
 summary{
+    cursor: pointer;
     background:black;
     color:white;
 }
